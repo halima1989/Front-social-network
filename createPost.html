@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+       
+
+ <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <img
+                    class="mx-auto h-10 w-auto"
+                    src="https://media.istockphoto.com/id/1273238746/fr/vectoriel/ajout-de-matriculate.jpg?s=1024x1024&w=is&k=20&c=8_8XC2rOKyu4ff3FTTV6o17bN94idJd-g7izLr-MR0Q="
+                    alt="Your Company"
+                />
+                <h2
+                    class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
+                >
+                   create a post 
+                </h2>
+            </div>
+
+          
+
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label
+                                class="block text-sm font-medium leading-6 text-gray-900"
+                                >text</label
+                            >
+                        </div>
+                        <div class="mt-2">
+                            <input
+                                type="text"
+                                autocomplete="current-password"
+                                required
+                                class=" text block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 indent-3 description"
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label
+                                class="block text-sm font-medium leading-6 text-gray-900"
+                                >file</label
+                            >
+                        </div>
+                        <div class="mt-2">
+                            <input
+                                type="file"
+                                required
+                                class=" file block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 indent-3 image"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                      <div class="flex items-center justify-between">
+                          <label
+                              class="block text-sm font-medium leading-6 text-gray-900"
+                              >Visibility</label
+                          >
+                      </div>
+                      <div class="mt-2">
+                          <select
+                              required
+                              class=" visibility block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 indent-3 "
+                          >
+                          <option>Public</option>
+                          <option>Private</option>
+
+                        </select>
+                      </div>
+                  </div>
+                    </div>
+                   
+                    <div class="createPostAlert"></div>
+
+                    <div>
+                        <button onclick="createPost()"
+                            class="flex w-full justify-center rounded-md bg-indigo-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                        >Create a post
+                        </button>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        <script src="user.js"></script>
+</body>
+</html>

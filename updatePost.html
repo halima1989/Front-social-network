@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.4/dist/flowbite.min.css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+        <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+            <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                <img
+                    class="mx-auto h-10 w-auto"
+                    src="https://media.istockphoto.com/id/1273238746/fr/vectoriel/ajout-de-matriculate.jpg?s=1024x1024&w=is&k=20&c=8_8XC2rOKyu4ff3FTTV6o17bN94idJd-g7izLr-MR0Q="
+                    alt="Your Company"
+                />
+                <h2
+                    class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
+                >
+                   Update a post 
+                </h2>
+            </div>
+
+          
+
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label
+                                class="block text-sm font-medium leading-6 text-gray-900"
+                                >text</label
+                            >
+                        </div>
+                        <div class="mt-2">
+                            <input
+                                type="text"
+                                autocomplete="current-password"
+                                required
+                                class=" editText block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 indent-3 description"
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center justify-between">
+                            <label
+                                class="block text-sm font-medium leading-6 text-gray-900"
+                                >file</label
+                            >
+                        </div>
+                        <div class="mt-2">
+                            <input
+                                type="file"
+                                required
+                                class=" editFile block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 indent-3 image"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                      <div class="flex items-center justify-between">
+                          <label
+                              class="block text-sm font-medium leading-6 text-gray-900"
+                              >Visibility</label
+                          >
+                      </div>
+                      <div class="mt-2">
+                          <select
+                              required
+                              class=" editVisibility block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 indent-3 "
+                          >
+                          <option>Public</option>
+                          <option>Private</option>
+
+                        </select>
+                      </div>
+        <button type="button" onclick="updatePost()" class="w-full p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600">Update Post</button>
+        <div class="updatePostAlert mt-4 text-center"></div>
+    </form>
+</div> 
+<script src="updatePost.js"></script>
+</body>
+</html>
+   

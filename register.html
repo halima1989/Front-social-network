@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="max-w-lg mx-auto  bg-white dark:bg-gray-800 rounded-lg shadow-md px-8 py-10 flex flex-col items-center">
+    <h1 class="text-xl font-normal text-center text-gray-700 dark:text-gray-200 mb-8">Register</h1>
+    <form class=" registerForm w-full flex flex-col gap-4">
+
+
+      <div class="flex items-start flex-col justify-start">
+        <label for="name" class="text-sm text-gray-700 dark:text-gray-200 mr-2">Username</label>
+        <input type="text" autocomplete="name" id="name" name="name"
+          class="name w-full px-3 dark:text-gray-200 dark:bg-gray-900 py-2 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500">
+      </div>
+
+      <div class="flex items-start flex-col justify-start">
+        <label for="email" class=" text-sm text-gray-700 dark:text-gray-200 mr-2">Email</label>
+        <input type="email" autocomplete="email" id="email" name="email"
+          class="email w-full px-3 dark:text-gray-200 dark:bg-gray-900 py-2 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500">
+      </div>
+
+      <div class="flex items-start flex-col justify-start">
+        <label for="password" class=" text-sm text-gray-700 dark:text-gray-200 mr-2">Password</label>
+        <input type="password" autocomplete="current-password" id="password" name="password"
+          class="password w-full px-3 dark:text-gray-200 dark:bg-gray-900 py-2 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500">
+      </div>
+
+      <div class="flex items-start flex-col justify-start">
+        <label for="image" class=" text-sm text-gray-700 dark:text-gray-200 mr-2">insert your profile photo</label>
+        <input type="file" class="image" id="image" name="image"
+          class="w-full px-3 dark:text-gray-200 dark:bg-gray-900 py-2 rounded-md border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-1 focus:ring-blue-500">
+      </div>
+      <div class="mt-4">
+        <p class="registerAlert"></p>
+      </div>
+      <button onclick="registerUser(event)" type="submit"
+        class=" bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md shadow-sm">Register</button>
+    </form>
+
+    <div class="mt-4 text-center">
+      <span class="text-sm text-gray-500 dark:text-gray-300">Already have an account? </span>
+      <a href="./login.html" class="loginBtn text-blue-500 hover:text-blue-600">Login</a>
+    </div>
+    </form>
+  </div>
+
+
+  <script src="./register.js"></script>
+
+</body>
+
+</html>
